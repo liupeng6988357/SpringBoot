@@ -27,10 +27,16 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <!-- 为什么不需要写版本号  在parent中封装好了版本号 -->
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
     </dependencies>
 
-    <!-- springboot 依赖于springboot实现微服务###  springboot 默认继承springmvc组件 springcloud
+    <!-- springcloud 依赖于springboot实现微服务###  springboot 默认继承springmvc组件 springcloud
 
         使用springmvc 编写微服务http接口（http+json格式）
     -->
+
 </project>

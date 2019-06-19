@@ -1,12 +1,14 @@
-package com.itmayiedu.controller;
+package com.itmayiedu;
 
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@EnableAutoConfiguration
-@ComponentScan("com.itmayiedu.controller")
+
+/**
+ * SpringBootApplication扫描同级包
+ */
+@SpringBootApplication
 public class App {
 
     public static void main(String[] args) {
