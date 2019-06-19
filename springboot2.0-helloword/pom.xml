@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itmayiedu</groupId>
+    <artifactId>springboot2.0-helloword</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- spring-boot-starter-parent 整合第三方常用框架（各种依赖信息） -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.0.RELEASE</version>
+    </parent>
+
+    <!--spring-boot-starter-web 是springBoot 整合SpringMVC web  实现原理：maven依赖继承关系
+        相当于把第三方常用maven依赖信息，在parent 项目中封装好了，使用springboot 提供依赖信息关联整合jar包
+
+    在springboot 中  快速原理（maven 父子依赖关系），springboot对常用依赖信息进行封装
+     -->
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 为什么不需要写版本号  在parent中封装好了版本号 -->
+        </dependency>
+    </dependencies>
+
+    <!-- springboot 依赖于springboot实现微服务###  springboot 默认继承springmvc组件 springcloud
+
+        使用springmvc 编写微服务http接口（http+json格式）
+    -->
+</project>
